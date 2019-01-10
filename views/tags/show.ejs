@@ -1,0 +1,12 @@
+<h2>Posts tagged with #<%= tag.content %></h2>
+
+<hr />
+
+<% tag.posts.forEach(function(p){ %>
+    <h3>
+        <a href="/posts/<%= p.id %>">
+            <%= p.title %>
+        </a>
+    </h3>
+<% }) %>
+

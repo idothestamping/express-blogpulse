@@ -1,0 +1,16 @@
+<hr />
+<h1>Tags</h1>
+
+<% tags.forEach(function(t){ %>
+    <h2>
+        <a href="/tags/<%= t.id %>">
+            #<%= t.content %>
+        </a>
+    </h2>
+<% }) %>
+
+<hr />
+
+
+
+<a href="/">&larr; Back Home</a>

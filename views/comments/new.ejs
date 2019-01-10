@@ -1,4 +1,4 @@
-<h1>Create a new post</h1>
+<h1>Create a new Comment</h1>
 
 <form action="/posts" method="POST">
   <div class="form-group">
@@ -7,7 +7,7 @@
   </div>
 
   <div class="form-group">
-    <label for="author">Author</label>
+    <label for="author">Name</label>
     <select name="authorId" id="author" class="form-control" required>
       <% authors.forEach(function(author) { %>
         <option value="<%= author.id %>"><%= author.getFullName() %></option>
@@ -17,13 +17,8 @@
   </div>
 
   <div class="form-group">
-    <label for="content">Content</label>
+    <label for="content">Comment</label>
     <textarea type="text" class="form-control" id="content" name="content" required></textarea>
-  </div>
-
-  <div class="form-group">
-    <label for="content">Tags (comma-separated)</label>
-    <input type="text" class="form-control" name="tags" placeholder="comma-separated list of tags"></input>
   </div>
 
   <input type="submit" class="btn btn-primary">
